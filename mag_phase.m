@@ -11,7 +11,7 @@
 %
 %--------------------------------------------------------------------------
 %
-% MATLAB Central File Exchange: 
+% MATLAB Central File Exchange: mathworks.com/matlabcentral/fileexchange/94115-magnitude-and-phase-of-a-transfer-function-mag_phase
 % GitHub: https://github.com/tamaskis/mag_phase-MATLAB
 %
 % See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
