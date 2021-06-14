@@ -1,7 +1,7 @@
 %==========================================================================
 %
-% mag_phase  Magnitude and phase of a transfer function at a specific point
-% in the frequency domain.
+% mag_phase  Magnitude and phase of a linear system (i.e. transfer 
+% function) at a specific point in the frequency domain.
 %
 %   [mag,phase] = mag_phase(sys,x)
 %   [mag,phase] = mag_phase(sys,x,units)
