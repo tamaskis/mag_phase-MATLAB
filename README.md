@@ -1,6 +1,6 @@
 # `mag_phase`
 
-Magnitude and phase of a linear system (i.e. transfer function) at a specific point in the frequency domain.
+Magnitude and phase of a transfer function (i.e. linear system) at a specific point in the frequency domain.
 
 
 ## Syntax
