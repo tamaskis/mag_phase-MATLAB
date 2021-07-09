@@ -7,7 +7,8 @@
 %   [mag,phase] = mag_phase(sys,x,units)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-14
+% Contact: tamas.a.kis@outlook.com
+% Last Update: 2021-07-09
 %
 %--------------------------------------------------------------------------
 %
@@ -19,18 +20,18 @@
 %
 %--------------------------------------------------------------------------
 %
-% -------
-% INPUTS:
-% -------
+% ------
+% INPUT:
+% ------
 %   sys     - (tf) continuous- or discrete-time linear system
 %   x       - (1×1 complex) location in frequency domain
 %               --> s=x in continuous domain
 %            	--> z=x in discrete domain
 %   units 	- (OPTIONAL) (char) 'deg' or 'rad'
 %
-% --------
-% OUTPUTS:
-% --------
+% -------
+% OUTPUT:
+% -------
 %   mag     - (1×1) magnitude of transfer function at s=x or z=x
 %   phase   - (1×1) phase of transfer function at s=x or z=x
 %               --> [deg] if units = 'deg'
@@ -51,7 +52,7 @@ function [mag,phase] = mag_phase(sys,x,units)
     phase = atan2d(imag(evalfr(sys,x)),real(evalfr(sys,x)));
     
     % converts phase to radians if necessary
-    if strcmp(units,'rad')
+    if strcmpi(units,'rad')
         phase = phase*(pi/180);
     end
     
