@@ -7,16 +7,12 @@
 %   [mag,phase] = mag_phase(sys,x,units)
 %
 % Copyright © 2021 Tamas Kis
+% Last Update: 2021-08-28
+% Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-09
 %
-%--------------------------------------------------------------------------
-%
-% MATLAB Central File Exchange: mathworks.com/matlabcentral/fileexchange/94115-magnitude-and-phase-of-a-transfer-function-mag_phase
-% GitHub: https://github.com/tamaskis/mag_phase-MATLAB
-%
-% See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
-% documentation. Both of these files are included with the download.
+% TECHNICAL DOCUMENTATION:
+% https://tamaskis.github.io/documentation/Magnitude_and_Phase_of_a_Linear_System.pdf
 %
 %--------------------------------------------------------------------------
 %
@@ -24,7 +20,7 @@
 % INPUT:
 % ------
 %   sys     - (tf) continuous- or discrete-time linear system
-%   x       - (1×1 complex) location in frequency domain
+%   x       - (1×1 complex double) location in frequency domain
 %               --> s=x in continuous domain
 %            	--> z=x in discrete domain
 %   units 	- (OPTIONAL) (char) 'deg' or 'rad'
@@ -32,9 +28,9 @@
 % -------
 % OUTPUT:
 % -------
-%   mag     - (1×1) magnitude of transfer function at s=x or z=x
-%   phase   - (1×1) phase of transfer function at s=x or z=x
-%               --> [deg] if units = 'deg'
+%   mag     - (1×1 double) magnitude of transfer function at s=x or z=x
+%   phase   - (1×1 double) phase of transfer function at s=x or z=x
+%               --> [deg] if units = 'deg' (default if "units" not input)
 %               --> [rad] if units = 'rad'
 %
 %==========================================================================
