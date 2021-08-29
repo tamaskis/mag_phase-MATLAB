@@ -23,7 +23,7 @@
 %   x       - (1×1 complex double) location in frequency domain
 %               --> s=x in continuous domain
 %            	--> z=x in discrete domain
-%   units 	- (OPTIONAL) (char) 'deg' or 'rad'
+%   units   - (OPTIONAL) (char) 'deg' or 'rad'
 %
 % -------
 % OUTPUT:
