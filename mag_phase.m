@@ -34,6 +34,12 @@
 %               --> [deg] if units = 'deg' (default if "units" not input)
 %               --> [rad] if units = 'rad'
 %
+% -----
+% NOTE:
+% -----
+%   --> "sys" can be input as a transfer function model (tf), state space
+%       model (ss), or a zero-pole-gain model (zpk)
+%
 %==========================================================================
 function [mag,phase] = mag_phase(sys,x,units)
     
