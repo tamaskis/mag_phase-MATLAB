@@ -19,4 +19,4 @@ Magnitude and phase of a transfer function (i.e. linear system) at a specific po
 ## Examples and Additional Documentation
 
    - See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples. 
-   - See ["Magnitude_and_Phase_of_a_Linear_System.pdf"](https://tamaskis.github.io/documentation/Magnitude_and_Phase_of_a_Linear_System.pdf) (also included with download) for the technical documentation.
+   - See ["Magnitude_and_Phase_of_a_Linear_System.pdf"](https://tamaskis.github.io/files/Magnitude_and_Phase_of_a_Linear_System.pdf) (also included with download) for the technical documentation.

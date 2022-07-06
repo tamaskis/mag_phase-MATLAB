@@ -7,12 +7,12 @@
 %   [mag,phase] = mag_phase(sys,x,units)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-10-09
+% Last Update: 2022-07-06
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
-% https://tamaskis.github.io/documentation/Magnitude_and_Phase_of_a_Linear_System.pdf
+% https://tamaskis.github.io/files/Magnitude_and_Phase_of_a_Linear_System.pdf
 %
 %--------------------------------------------------------------------------
 %
