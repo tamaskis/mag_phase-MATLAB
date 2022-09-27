@@ -14,7 +14,7 @@
 % TECHNICAL DOCUMENTATION:
 % https://tamaskis.github.io/files/Magnitude_and_Phase_of_a_Linear_System.pdf
 %
-% REQUIREMENTS:
+% DEPENDENCIES:
 %   • Control System Toolbox
 %
 %--------------------------------------------------------------------------
