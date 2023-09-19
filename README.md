@@ -1,20 +1,24 @@
-# `mag_phase` [![View Magnitude and Phase of a Transfer Function (mag_phase) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/94115-magnitude-and-phase-of-a-transfer-function-mag_phase)
+# `mag_phase` [![View Magnitude and Phase of a Transfer Function (mag_phase) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/94115-magnitude-and-phase-of-a-transfer-function-mag_phase) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=tamaskis/mag_phase-MATLAB)
 
 Magnitude and phase of a transfer function (i.e. linear system) at a specific point in the frequency domain.
-
 
 ## Syntax
 
 `[mag,phase] = mag_phase(sys,x)`\
 `[mag,phase] = mag_phase(sys,x,units)`
 
+## Inputs
 
-## Description
+- `sys` (1×1 `tf`, `zpk`, or `ss`): continuous or discrete-time linear system
+- `x` (1×1 `complex double`): location in frequency domain
+   - <img src="https://latex.codecogs.com/svg.latex?\inline&space;s=x"/> in continuous domain
+   - <img src="https://latex.codecogs.com/svg.latex?\inline&space;z=x"/> in discrete domain
+- `units` (`char` array): `deg` or `rad`
 
-`[mag,phase] = mag_phase(sys,x)` returns the magnitude, `mag`, and phase, `phase`, of the linear system, `sys`, at a desired location `x` in the frequency domain. If `sys` represents a continuous-time transfer function <img src="https://latex.codecogs.com/svg.latex?\inline&space;G(s)"/>, then `x` corresponds to a point <img src="https://latex.codecogs.com/svg.latex?\inline&space;s"/>. If `sys` represents a discrete-time transfer function <img src="https://latex.codecogs.com/svg.latex?\inline&space;G(z)"/>, then `x` corresponds to a point <img src="https://latex.codecogs.com/svg.latex?\inline&space;z"/>. By default, the phase is returned in units of degrees.
+## Outputs
 
-`[mag,phase] = mag_phase(sys,x,units)` does the same as the syntax above, but returns the phase in degrees if `units` is specified as `'deg'`, and in radians if `units` is specified as `'rad'`.
-
+- `mag` (1×1 `double`): magnitude of transfer function at <img src="https://latex.codecogs.com/svg.latex?\inline&space;s=x"/> or <img src="https://latex.codecogs.com/svg.latex?\inline&space;z=x"/>
+- `phase` (1×1 `double`): phase of transfer function at <img src="https://latex.codecogs.com/svg.latex?\inline&space;s=x"/> or <img src="https://latex.codecogs.com/svg.latex?\inline&space;z=x"/>
 
 ## Examples and Additional Documentation
 
