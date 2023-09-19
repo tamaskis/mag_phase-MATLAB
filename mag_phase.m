@@ -7,7 +7,7 @@
 %   [mag,phase] = mag_phase(sys,x,units)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2022-07-06
+% Last Update: 2023-09-18
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -22,26 +22,18 @@
 % ------
 % INPUT:
 % ------
-%   sys     - (1×1 tf, zpk, or ss) continuous- or discrete-time linear 
+%   sys     - (1×1 tf, zpk, or ss) continuous or discrete-time linear
 %             system
 %   x       - (1×1 complex double) location in frequency domain
-%               --> s = x in continuous domain
-%            	--> z = x in discrete domain
-%   units   - (OPTIONAL) (char) 'deg' or 'rad'
+%               • s = x in continuous domain
+%            	• z = x in discrete domain
+%   units   - (OPTIONAL) (char array) 'deg' or 'rad' (defaults to 'deg')
 %
 % -------
 % OUTPUT:
 % -------
 %   mag     - (1×1 double) magnitude of transfer function at s = x or z = x
 %   phase   - (1×1 double) phase of transfer function at s = x or z = x
-%               --> [deg] if units = 'deg' (default if "units" not input)
-%               --> [rad] if units = 'rad'
-%
-% -----
-% NOTE:
-% -----
-%   --> "sys" can be input as a transfer function model (tf), state space
-%       model (ss), or a zero-pole-gain model (zpk)
 %
 %==========================================================================
 function [mag,phase] = mag_phase(sys,x,units)
